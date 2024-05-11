@@ -38,11 +38,11 @@ nav > ul > li > a {
     font-size: 20px;
 }
 
-a:after, a:visited {
+a:after, a:visited, a:before {
     color: #343E5B;
 }
 
-a:hover, a:before  {
+a:hover {
     color: #DE6A5B;
 }
 
