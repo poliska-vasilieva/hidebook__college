@@ -42,7 +42,7 @@ a:after, a:visited {
     color: #343E5B;
 }
 
-a:hover {
+a:hover, a:before  {
     color: #DE6A5B;
 }
 
