@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>HideBook</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><img src="./img/logo.svg" alt="logo" class="logo__img"></a>
+                <nav>
+                    <ul class="ul__header">
+                        <li><a href="give.html">Отдам</a></li>
+                        <li><a href="take.html">Приму</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="reg_avt.html">Авторизация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="info__b">
+            <div class="container">
+                <div class="info__book">
+                    <div class="obl__book"><img src="./img/piter.png" alt="" class="img__obl"></div>
+                    <div class="text__book">
+                        <h4>Питер Пэн</h4>
+                        <p class="p__book"><span>Автор</span><span>Джеймс Барри</span></p>
+                        <p class="p__book"><span>Язык</span><span>русский</span></p>
+                        <p class="p__book"><span>Жанры</span><span>сказка</span></p>
+                        <p class="p__book"><span>Возрастные ограничения</span><span>6+</span></p>
+                        <p class="p__book"><span>Переплет</span><span>твердый</span></p>
+                        <p class="p__book"><span>Цена</span><span>150 р</span></p>
+                        <p class="p__book"><span>Кто отдаст</span><span>
+                                <button id="open">Женя</button>
+                                <dialog>
+                                    <p class="open__p">
+                                        <span class="hoz__bold">Связаться с хозяином книги можно по следующим
+                                            данным:</span>
+                                    <ul class="open__ul">
+                                        <li>e-mail: tuz_dama_yakor@gmail.com</li>
+                                    </ul>
+                        </p>
+                        <p>
+                            <button id="close">Закрыть окно</button>
+                        </p>
+                        </dialog>
+                        </span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reply">
+            <div class="container">
+                <div class="repls">
+                    <div class="repl">
+                        <div class="data__aut">
+                            <div class="inf__aut">
+                                <div class="name__aut">Станислава</div>
+                                <div class="stars"><img src="./img/stars__4.svg" alt=""></div>
+                            </div>
+                            <div class="when">11.11.2023</div>
+                        </div>
+                        <div class="text__repl">Книга просто великолепная! Возрастная аудитория от 6 лет. Хотя мне уже и
+                            тридцать, но поверила в то что живут феи, и существует Питер Пэн. </div>
+                    </div>
+
+                    <div class="repl">
+                        <div class="data__aut">
+                            <div class="inf__aut">
+                                <div class="name__aut">Галя</div>
+                                <div class="stars"><img src="./img/stars__4.svg" alt=""></div>
+                            </div>
+                            <div class="when">08.06.2021</div>
+                        </div>
+                        <div class="text__repl">Приобретала издание для ребёнка в нашу школьную библиотеку. Шикарная
+                            история
+                        </div>
+                    </div>
+
+                    <div class="repl">
+                        <div class="data__aut">
+                            <div class="inf__aut">
+                                <div class="name__aut">Любовь</div>
+                                <div class="stars"><img src="./img/stars__5.svg" alt=""></div>
+                            </div>
+                            <div class="when">09.08.2023</div>
+                        </div>
+                        <div class="text__repl">Очень понравилась книга, я как будто окунулась в детство, дочери 4,5
+                            года, сначала заинтересовалась, но потом отказалась от прослушивания сказки, потому что для
+                            ее возраста она ещё тяжеловата, приходилось пропускать часть текста. Поэтому рекомендую
+                            обязательно для приобретения, но для ребятишек лет от 6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><img src="./img/logo.svg" alt="logo" class="logo__img"></a>
+                <nav>
+                    <ul class="ul__footer">
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var dialog = document.querySelector('dialog')
+        // выводим модальное окно
+        document.querySelector('#open').onclick = function () {
+            dialog.showModal()
+        }
+        // скрываем окно
+        document.querySelector('#close').onclick = function () {
+            dialog.close()
+        }
+    </script>
+</body>
+
+</html>

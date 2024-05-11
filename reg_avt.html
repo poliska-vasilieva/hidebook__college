@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>HideBook</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><img src="./img/logo.svg" alt="logo" class="logo__img"></a>
+                <nav>
+                    <ul class="ul__header">
+                        <li><a href="give.html">Отдам</a></li>
+                        <li><a href="take.html">Приму</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="reg_avt.html">Авторизация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main__avt__reg">
+        <section>
+            <div class="container">
+                <div class="card__tab">
+
+                    <div class="tab">
+
+                        <input checked id="tab-reg" name="tab-btn" type="radio" value="">
+                        <label for="tab-reg">Регистрация</label>
+                        <input id="tab-avt" name="tab-btn" type="radio" value="">
+                        <label for="tab-avt">Авторизация</label>
+                        <div class="tab-content" id="content-reg">
+                            <form action="#" method="post">
+                                <div class="descr">Введите данные</div>
+                                <input type="text" placeholder="ФИО" class="reg_input" required></input>
+                                <input type="email" placeholder="Email" class="reg_input" required></input>
+                                <input type="password" placeholder="Пароль" minlength="8" class="reg_input"
+                                    required></input>
+                                <input type="password" placeholder="Повтор пароля" minlength="8" class="reg_input"
+                                    required></input>
+                                <button type="submit" class="btn btn__tab">Отправить</button>
+                        </div>
+                        <div class="tab-content" id="content-avt">
+                            <div class="descr">Введите данные</div>
+                            <input type="email" placeholder="Email" class="reg_input" required></input>
+                            <input type="password" placeholder="Пароль" minlength="8" class="reg_input"
+                                required></input>
+                            <button type="submit" class="btn btn__tab">Войти</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><img src="./img/logo.svg" alt="logo" class="logo__img"></a>
+                <nav>
+                    <ul class="ul__footer">
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

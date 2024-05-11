@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>HideBook</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><img src="./img/logo.svg" alt="logo" class="logo__img"></a>
+                <nav>
+                    <ul class="ul__header">
+                        <li><a href="give.html">Отдам</a></li>
+                        <li><a href="take.html">Приму</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="reg_avt.html">Авторизация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="container">
+                <div class="prof">
+                    <div class="prof__img">
+                        <img src="./img/prof.svg" alt="" class="pr__img">
+                    </div>
+                    <div class="prof__info">
+                        <form action="sendmail.php" method="post">
+                            <input type="text" placeholder="ФИО" class="reg_input" required></input>
+                            <input class="form" type="number" placeholder="Номер телефона" required>
+                            <input type="email" placeholder="Email" class="reg_input" required></input>
+                            <input class="form" type="text" placeholder="Ссылка на одну из соц.сетей" required>
+                            <button class="btn btn__tab">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sending">
+            <div class="container">
+                <div class="vvod">
+                    <h3>Заполните все поля, чтобы ваша книжная карточка отобразилась на сайте!</h3>
+                    <div class="card__tab">
+
+                        <div class="tab">
+                            <input checked id="tab-reg" name="tab-btn" type="radio" value="">
+                            <label for="tab-reg">Отдам</label>
+                            <input id="tab-avt" name="tab-btn" type="radio" value="">
+                            <label for="tab-avt">Ищу книгу</label>
+                            <div class="tab-content" id="content-reg">
+                                <div class="descr">Введите данные</div>
+                                <input type="text" id="name" placeholder="Название книги" required></input>
+                                <input type="text" id="name" placeholder="Автор книги" required></input>
+
+                                <form>
+                                    <select>
+                                        <option value="">Жанры</option>
+                                        <option value="">Роман</option>
+                                        <option value="">Проза</option>
+                                        <option value="">Фантастика</option>
+                                        <option value="">Новелла</option>
+                                        <option value="">Комедия</option>
+                                        <option value="">Трагедия</option>
+                                        <option value="">Драма</option>
+                                    </select>
+                                </form>
+
+                                <form>
+                                    <select>
+                                        <option value="">Язык</option>
+                                        <option value="">Русский</option>
+                                        <option value="">Английский</option>
+                                        <option value="">Немецкий</option>
+                                        <option value="">Французский</option>
+                                    </select>
+                                </form>
+
+                                <form>
+                                    <select>
+                                        <option value="">Возрастное ограничение</option>
+                                        <option value="">0+</option>
+                                        <option value="">6+</option>
+                                        <option value="">12+</option>
+                                        <option value="">16+</option>
+                                        <option value="">18+</option>
+                                    </select>
+                                </form>
+
+                                <form>
+                                    <select>
+                                        <option value="">Переплет</option>
+                                        <option value="">Твердый</option>
+                                        <option value="">Мягкий</option>
+                                    </select>
+                                </form>
+                                <input type="text" id="name" placeholder="Цена, руб" required></input>
+                                <input type="file" id="file" required>
+                                <button type="submit" class="btn btn__tab">Отправить</button>
+
+                            </div>
+                            <div class="tab-content" id="content-avt">
+                                <div class="descr">Введите данные</div>
+                                <input type="text" id="name" placeholder="Название книги" required></input>
+                                <input type="text" id="name" placeholder="Автор книги" required></input>
+
+                                <form>
+                                    <select>
+                                        <option value="">Жанры</option>
+                                        <option value="">Роман</option>
+                                        <option value="">Проза</option>
+                                        <option value="">Фантастика</option>
+                                        <option value="">Новелла</option>
+                                        <option value="">Комедия</option>
+                                        <option value="">Трагедия</option>
+                                        <option value="">Драма</option>
+                                    </select>
+                                </form>
+
+                                <form>
+                                    <select>
+                                        <option value="">Язык</option>
+                                        <option value="">Русский</option>
+                                        <option value="">Английский</option>
+                                        <option value="">Немецкий</option>
+                                        <option value="">Французский</option>
+                                    </select>
+                                </form>
+
+                                <form>
+                                    <select>
+                                        <option value="">Возрастное ограничение</option>
+                                        <option value="">0+</option>
+                                        <option value="">6+</option>
+                                        <option value="">12+</option>
+                                        <option value="">16+</option>
+                                        <option value="">18+</option>
+                                    </select>
+                                </form>
+                                <input type="file" id="file" required>
+                                <button type="submit" class="btn btn__tab">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><img src="./img/logo.svg" alt="logo" class="logo__img"></a>
+                <nav>
+                    <ul class="ul__footer">
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
