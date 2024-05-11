@@ -38,7 +38,7 @@ nav > ul > li > a {
     font-size: 20px;
 }
 
-a:after, a:visited, a:before {
+a:after, a:visited, a:before, link {
     color: #343E5B;
 }
 
