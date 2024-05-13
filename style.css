@@ -303,7 +303,7 @@ label {
     margin-bottom: 30px;
 }
 
-.p__book:after {  content:'...';
+.p__book:after {  content:'................................................................................................';
     display: block;
     white-space: nowrap;
     overflow: hidden;
