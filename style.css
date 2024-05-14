@@ -523,7 +523,7 @@ h3 {
 @media screen and (max-width: 375px) {
 
     .container {
-        max-width: 340px;
+        max-width: 350px;
     }
 
     .about {
@@ -535,7 +535,7 @@ h3 {
     }
 
     li {
-        margin: 0px 16px;
+        margin: 0px 12px;
     }
 }
 
